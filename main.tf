@@ -8,3 +8,7 @@ module "node-pool" {
   node-pool = var.node-pool
   clusters  = module.gke-cluster.name
 }
+
+module "managed-zone" {
+  source = "./modules/managedZones"
+}
