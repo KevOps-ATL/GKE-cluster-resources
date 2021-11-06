@@ -15,7 +15,7 @@ variable "node-pool" {
   default = {
     backup-node-pool = {
       location     = "us-east1-c"
-      node_count   = 1
+      node_count   = 3
       labels       = "poc"
       machine_type = "n1-standard-1"
       cluster      = "blog-cluster"
@@ -28,10 +28,10 @@ variable "node-pool" {
 variable "domains" {
   type = map(any)
   default = {
-    kevops-atl = {
-      name        = "kevops-atl"
-      dns_name    = "kevops-atl.com"
-      description = "kevops ghost blog"
+    stone-mountain = {
+      name        = "stonemountainmoto"
+      dns_name    = "stonemountainmoto.com"
+      description = "stonemtn blog"
       labels      = "blogs"
     }
 
