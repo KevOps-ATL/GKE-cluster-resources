@@ -2,9 +2,9 @@ variable "domains" {
   type = map(any)
   default = {
     blog = {
-      name        = "kevops-atl"
-      dns_name    = "kevops-atl.com."
-      description = "kevops ghost blog"
+      name        = "kevops"
+      dns_name    = "stonemountainmoto.com."
+      description = "kevops blog"
       labels      = "blogs"
     }
 
