@@ -4,6 +4,8 @@ resource "google_container_cluster" "primary" {
 
   name     = each.key # as the system iterates each key from the respective map will be used
   location = each.value.zone
+  deletion_protection = false
+
 
   # We can't create a cluster with no node pool defined, but we want to only use
   # separately managed node pools. So we create the smallest possible default

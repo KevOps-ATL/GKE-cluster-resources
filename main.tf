@@ -9,6 +9,6 @@ module "node-pool" {
   clusters  = module.gke-cluster.name
 }
 
-module "managed-zone" {
-  source = "./modules/managedZones"
-}
+# module "managed-zone" {
+#  source = "./modules/managedZones"
+# }

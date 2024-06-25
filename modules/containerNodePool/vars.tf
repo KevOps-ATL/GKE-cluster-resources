@@ -3,9 +3,9 @@ variable "node-pool" {
   default = {
     backup-node-pool = {
       location     = "us-central1"
-      cluster      = "atldevops"
-      machine_type = "n1-standard-1"
-      node_count   = 1
+      cluster      = "weather-app"
+      machine_type = "e2-medium"
+      node_count   = 2
       labels       = "poc"
     }
 
